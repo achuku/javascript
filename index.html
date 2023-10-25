@@ -10,24 +10,50 @@
             var message;
             message = 'Hello';
             message = 'Vuchee';
-
+            console.log(message);
             //alert(message);
 
             let admin;
             let name = 'John';
             admin = name;
-            //alert(admin);
+            console.log(admin);
 
             const PLANET = 'Earth';
             
-            let first = 10, second = 12, third = 15, fourth = 20;
+            /* let first = 10, second = 12, third = 25, fourth = 20;
             let sum1 = first + second;
+            console.log(sum1);
             let dif1 = third - fourth;
+            console.log(dif1);
             let finalResult = sum1 * dif1;
             let evenOddResult = (finalResult%2);
             console.log(finalResult);
-            alert(evenOddResult);
+            console.log(evenOddResult); */
             
+
+
+            // Final result should be 4633.33
+            // Add/update your code here
+
+            let result = 7 + 13 / 9 + 7;
+            let result2 = 100 / 2 * 6;
+            result = result * result2;
+            finalResult = result.toFixed(2);
+            typeof finalResult ;
+            finalNumber = finalResult;
+            console.log (finalNumber);    
+            
+            // Don't edit the code below here!
+
+            section.innerHTML = ' ';
+            const para1 = document.createElement('p');
+            para1.textContent = `Your finalResult is ${ finalResult }`;
+            const para2 = document.createElement('p');
+            const finalNumberCheck = isNaN(finalNumber) === false ? 'finalNumber is a number type. Well done!' : `Ooops! finalNumber is not a number.`;
+            para2.textContent = finalNumberCheck;
+
+            section.appendChild(para1);
+            section.appendChild(para2);
         </script>
     </body>
 </html>
