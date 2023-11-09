@@ -1,1 +1,1 @@
-Javascript Datatypes
+JS Datatypes
