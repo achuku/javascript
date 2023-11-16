@@ -1,1 +1,1 @@
-JS Datatypes
+JS Datatypes and basic JS apps
