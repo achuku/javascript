@@ -12,6 +12,9 @@ function setWeather() {
   } else if (choice === "rainy") {
     para.textContent =
       "Rain is falling outside; take a rain coat and an umbrella, and don't stay out for too long.";
+  } else if (choice === "windy") {
+    para.textContent =
+      "It will be very windy. Better stay in with a cup of hot chocolate.";
   } else if (choice === "overcast") {
     para.textContent =
       "It isn't raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.";
