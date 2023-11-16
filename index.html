@@ -223,10 +223,24 @@ The difference is that the second parameter specifies the length of the extracte
             let part5 = str1.substr(7, 6); 
             console.log(part5);   
           
-            //replace() method
+            /*replace() method  
+            The replace() method does not change the string it is called on.
+
+The replace() method returns a new string.
+
+The replace() method replaces only the first match
+
+If you want to replace all matches, use a regular expression with the /g flag set. See examples below.
+
+By default, the replace() method is case sensitive. 
+            */
             let text2 = "Please visit Imara";
             let newText = text2.replace("Imara", "Banja");
             console.log(newText);
+
+            let text3 = "Please visit Imara and Imara!";
+            let newText2 = text3.replace(/Imara/g, "Banja");
+            console.log(newText2);
         </script>
     </body>
 </html>
