@@ -47,6 +47,10 @@ function cuberoot(num){
     return Math.cbrt(num);
 }
 
+function circumference(num){
+    return 2*Math.PI*num;
+}
+
 input.addEventListener("change", () => {
   const num = parseFloat(input.value);
   if (isNaN(num)) {
@@ -56,7 +60,8 @@ input.addEventListener("change", () => {
     para.textContent += `${num} cubed is ${cubed(num)}. `;
     para.textContent += `${num} factorial is ${factorial(num)}. `;
     para.textContent += `${num} sqaure root is ${squareroot(num)}. `;
-    para.textContent += `${num} cube root is ${cuberoot(num)}.`;
+    para.textContent += `${num} cube root is ${cuberoot(num)}. `;
+    para.textContent += `${num} is radius, circumference is ${circumference(num)} `;
   }
 });
   </script>
