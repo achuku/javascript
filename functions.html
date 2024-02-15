@@ -21,12 +21,17 @@
             }
             multiply()
 
-            function capitalize(){
-                let str = 'tremendous HOLIDAY Vacation';
-                let str2 = charAt(0).toUpperCase;
-                system.out.println(str2);
-                console.log(capitalize); 
+            
+            function capitalize(lowercase,uppercase,both ) {
+            const capitalizeLower = lowercase.charAt(0).toUpperCase() + lowercase.slice(1).toLowerCase();
+            const capitalizeUpper = uppercase.charAt(0).toUpperCase() + uppercase.slice(1).toLowerCase();
+            const capitalizeBoth = both.charAt(0).toUpperCase() + both.slice(1).toLowerCase();
+            console.log(capitalizeLower, capitalizeUpper , capitalizeBoth)
+            return `${capitalizeLower} ${capitalizeUpper} ${capitalizeBoth}`
             }
+            capitalize("hello","HELLO","hEllO");
+
+
             function lastLetter(){
                 let str3 = 'abcde';
                 str3 = ;
